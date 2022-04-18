@@ -18,7 +18,7 @@
       src: /opt/{{ tomcat_package }}.tar.gz
       dest: /opt
       remote_src: True
-  -  name: rename the tomcat directory
-     command: mv /opt/{{ tomcat_package }} /opt/tomcat/
+ # -  name: rename the tomcat directory
+  #   command: mv /opt/{{ tomcat_package }} /opt/tomcat/
   - name: start the tomcat service
     shell: nohup /opt/tomcat/bin/startup.sh
