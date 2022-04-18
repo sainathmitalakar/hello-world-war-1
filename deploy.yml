@@ -1,5 +1,5 @@
 ---
-- hosts: Appservers
+- hosts: dev
   become: true
   tasks:
   - name: Copy the war file
