@@ -4,7 +4,7 @@
   tasks:
   - name: Copy the war file
     copy: 
-      src: target/hello-world-war-1.0.1.war
+      src: target/hello.war
       dest: /opt/tomcat/webapps/
   - name: stop the tomcat
     shell: nohup /opt/tomcat/bin/shutdown.sh
