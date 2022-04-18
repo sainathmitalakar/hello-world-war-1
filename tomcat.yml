@@ -15,7 +15,7 @@
       dest: /opt
   - name: untar the tomcat package
     unarchive:
-      src: /opt/{{ tomcat_package }}.tar.gz
+      src: /opt/{{ tomcat_package }}.tar.gz.asc
       dest: /opt
       remote_src: True
   -  name: rename the tomcat directory
