@@ -4,7 +4,7 @@
 </head>
 <body>
 	<h1>Hello World!</h1>
-	<h2>Hii Manthan $ akhilesh & shubham & suresh & sainath have a good day</h2>
+	<h2>Hii team</h2>
 	<h2> good afternoon guys </h2>
 	<h2> This is dev enviroment </h2>
 	<p>
