@@ -2,7 +2,7 @@
 - hosts: dev
   become: true
   vars:
-   - tomcat_url: https://downloads.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz.asc
+   - tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz
    - tomcat_package: apache-tomcat-8.5.78
   tasks:
   - name: install java for tomcat
@@ -15,7 +15,7 @@
       dest: /opt
   - name: untar the tomcat package
     unarchive:
-      src: /opt/{{ tomcat_package }}.tar.gz.asc
+      src: /opt/{{ tomcat_package }}.tar.gz
       dest: /opt
       remote_src: True
   -  name: rename the tomcat directory
